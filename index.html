@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KANA SWIM CLUB | Staff Files</title>
+  <meta name="description" content="KANA SWIM CLUB staff profile viewer." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__bg"></div>
+    <nav class="nav">
+      <div class="brand"><span>KANA</span> SWIM CLUB</div>
+      <a href="#staff" class="nav__link">STAFF FILES</a>
+    </nav>
+    <section class="hero__content">
+      <p class="eyebrow">PROFESSIONAL SWIM INSTRUCTOR FILES</p>
+      <h1>KANA<br>SWIM CLUB</h1>
+      <p class="lead">本気で泳ぐ。笑顔で教える。<br>001〜006 Staff Profile β</p>
+      <a class="cta" href="#staff">STAFFを見る</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>PROFILE FILE形式で整理したKANA SWIM CLUBのスタッフ図鑑。各カードから通常版・KSC版画像、MOVIE、EX動画を切り替えて確認できます。</p>
+    </section>
+
+    <section id="staff" class="staff-section">
+      <div class="section-title">
+        <p>STAFF LIST</p>
+        <h2>Profile Files</h2>
+      </div>
+      <div id="staffGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <dialog id="viewer" class="viewer">
+    <button class="viewer__close" aria-label="閉じる">×</button>
+    <div class="viewer__layout">
+      <aside class="viewer__info">
+        <p class="viewer__no" id="viewerNo"></p>
+        <h3 id="viewerName"></h3>
+        <dl>
+          <div><dt>年齢</dt><dd id="viewerAge"></dd></div>
+          <div><dt>身長</dt><dd id="viewerHeight"></dd></div>
+          <div><dt>出身地</dt><dd id="viewerBirthplace"></dd></div>
+        </dl>
+        <p id="viewerCatch" class="viewer__catch"></p>
+        <div id="mediaButtons" class="media-buttons"></div>
+      </aside>
+      <section class="viewer__media">
+        <img id="mainImage" alt="" />
+        <video id="mainVideo" playsinline controls preload="metadata"></video>
+      </section>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <p>© KANA SWIM CLUB / Staff Files β</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
