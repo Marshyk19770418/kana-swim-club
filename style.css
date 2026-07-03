@@ -239,7 +239,7 @@ body.is-viewer-open{overflow:hidden}
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url("assets/images/op-main.png") !important;
+  background-image: url("assets/images/op-main.png.png") !important;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
