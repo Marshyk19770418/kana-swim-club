@@ -313,3 +313,16 @@ body.is-viewer-open{overflow:hidden}
     bottom: 36px;
   }
 }
+/* iPhone OP full image fit */
+@media (max-width: 767px) {
+  .hero__bg {
+    background-size: 100% auto !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-color: #061127 !important;
+  }
+
+  .hero__content {
+    bottom: max(22px, env(safe-area-inset-bottom)) !important;
+  }
+}
