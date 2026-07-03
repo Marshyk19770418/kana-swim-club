@@ -224,3 +224,92 @@ body.is-viewer-open{overflow:hidden}
     max-height:60svh !important;
   }
 }
+/* =========================
+   OP main visual
+   op-main.png for top screen
+========================= */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #061127;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/images/op-main.png") !important;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 1;
+  filter: none;
+}
+
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 34%;
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 17, 39, 0),
+    rgba(6, 17, 39, 0.65),
+    rgba(6, 17, 39, 0.95)
+  );
+  pointer-events: none;
+}
+
+/* OP画像にタイトルとコピーが入っているので、HTML側の文字は隠す */
+.hero .nav,
+.hero__content .eyebrow,
+.hero__content h1,
+.hero__content .lead {
+  display: none !important;
+}
+
+/* STAFFを見るボタンだけ本物として重ねる */
+.hero__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: max(28px, env(safe-area-inset-bottom));
+  z-index: 3;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content .cta {
+  width: min(78vw, 360px);
+  min-height: 58px;
+  border-radius: 999px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd94d, #f6b900);
+  color: #061127;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+/* PCでも一応きれいに見せる */
+@media (min-width: 768px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero__bg {
+    background-size: contain;
+    background-color: #061127;
+  }
+
+  .hero__content {
+    bottom: 36px;
+  }
+}
