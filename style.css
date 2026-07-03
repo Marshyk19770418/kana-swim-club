@@ -105,3 +105,122 @@ body.is-viewer-open{overflow:hidden}
   .viewer__catch{font-size:15px;line-height:1.7}
   .viewer__media{min-height:62svh}
 }
+
+/* ===== PC display fit fix 2026-07-04 =====
+   Keep iPhone layout as-is, but make desktop Chrome fit portrait media
+   without changing browser zoom. */
+@media (min-width:901px){
+  .viewer{
+    width:min(1180px,96vw);
+    height:min(780px,92svh);
+    max-height:92svh;
+  }
+  .viewer__layout{
+    grid-template-columns:minmax(330px,390px) minmax(0,1fr);
+  }
+  .viewer__info{
+    padding:28px 24px;
+  }
+  .viewer__info h3{
+    font-size:clamp(28px,3vw,38px);
+    margin-bottom:14px;
+  }
+  .media-buttons{
+    gap:8px;
+  }
+  .media-buttons button{
+    padding:9px 12px;
+    min-height:38px;
+    font-size:12px;
+  }
+  .viewer__media{
+    padding:14px;
+    overflow:hidden;
+  }
+  .viewer__media img,
+  .viewer__media video{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:calc(92svh - 36px);
+    object-fit:contain;
+  }
+}
+
+/* Desktop/narrow Chrome window: do not blow portrait media up to full width. */
+@media (hover:hover) and (pointer:fine) and (max-width:900px){
+  .viewer{
+    width:min(720px,96vw);
+    height:92svh;
+    max-height:92svh;
+    border-radius:22px;
+    overflow:auto;
+  }
+  .viewer__layout{
+    min-height:0;
+    height:auto;
+  }
+  .viewer__info{
+    padding:18px 18px 12px;
+  }
+  .viewer__info h3{
+    font-size:clamp(26px,5vw,36px);
+    margin:6px 0 12px;
+  }
+  .viewer__info dl{
+    gap:7px;
+    margin-bottom:10px;
+  }
+  .viewer__info dl div{
+    padding-bottom:7px;
+  }
+  .viewer__catch{
+    line-height:1.55;
+    margin:8px 0;
+  }
+  .media-buttons{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:7px;
+    margin-top:10px;
+  }
+  .media-buttons button{
+    min-height:34px;
+    padding:8px 6px;
+    font-size:11px;
+  }
+  .viewer__media{
+    min-height:0;
+    height:auto;
+    padding:10px 12px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .viewer__media img,
+  .viewer__media video{
+    width:auto !important;
+    height:auto !important;
+    max-width:100% !important;
+    max-height:58svh !important;
+    object-fit:contain !important;
+  }
+}
+
+/* Short desktop screens get a slightly tighter viewer. */
+@media (hover:hover) and (pointer:fine) and (max-height:760px){
+  .viewer{
+    height:94svh;
+    max-height:94svh;
+  }
+  .viewer__info{
+    padding-top:16px;
+    padding-bottom:10px;
+  }
+  .viewer__no{font-size:13px}
+  .viewer__info h3{font-size:28px;margin-bottom:10px}
+  .viewer__catch{font-size:14px;line-height:1.45}
+  .viewer__media img,
+  .viewer__media video{
+    max-height:60svh !important;
+  }
+}
