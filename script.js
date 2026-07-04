@@ -117,7 +117,7 @@ function buildMediaList(s) {
   }
 
   if (s.pvexx) {
-    list.push({ label: 'PV EXX', type: 'image', src: s.pvexx });
+  list.push({ label: 'PV EXX', type: 'image', src: s.pvexx });
   }
 
   if (s.pvexxx) {
