@@ -96,6 +96,50 @@ function buildMediaList(s) {
     list.push({ label: 'KSC', type: 'image', src: s.ksc });
   }
 
+  if (s.kscex) {
+    list.push({ label: 'KSC EX', type: 'image', src: s.kscex });
+  }
+
+  if (s.kscexx) {
+    list.push({ label: 'KSC EXX', type: 'image', src: s.kscexx });
+  }
+
+  if (s.kscexxx) {
+    list.push({ label: 'KSC EXXX', type: 'image', src: s.kscexxx });
+  }
+
+  if (s.pv) {
+    list.push({ label: 'PV', type: 'image', src: s.pv });
+  }
+
+  if (s.pvex) {
+    list.push({ label: 'PV EX', type: 'image', src: s.pvex });
+  }
+
+  if (s.pvexx) {
+    list.push({ label: 'PV EXX', type: 'image', src: s.pvexx });
+  }
+
+  if (s.pvexxx) {
+    list.push({ label: 'PV EXXX', type: 'image', src: s.pvexxx });
+  }
+
+  if (s.ex) {
+    list.push({ label: 'EX', type: 'image', src: s.ex });
+  }
+
+  if (s.exx) {
+    list.push({ label: 'EXX', type: 'image', src: s.exx });
+  }
+
+  if (s.exxx) {
+    list.push({ label: 'EXXX', type: 'image', src: s.exxx });
+  }
+
+  if (s.exxxx) {
+    list.push({ label: 'EXXXX', type: 'image', src: s.exxxx });
+  }
+
   if (Array.isArray(s.videos)) {
     s.videos.forEach(video => {
       if (video && video.src) {
