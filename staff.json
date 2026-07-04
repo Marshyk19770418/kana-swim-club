@@ -17,5 +17,17 @@
 "kscexx":"assets/images/007kscexx.jpeg",
 "pvex":"assets/images/007pvex.jpeg",
 "videos":[]
+},
+{"no":"008","name":"橘 遥","age":24,"height":170,"birthplace":"東京都","catch":"親しみやすい雰囲気とボリューミーな体が魅力のスイマー。",
+"cover":"assets/images/staff-008.jpeg",
+"ksc":"assets/images/008ksc.png",
+"kscex":"assets/images/008kscex.jpeg",
+"kscexx":"assets/images/008kscexx.jpeg",
+"kscexxx":"assets/images/008kscexxx.jpeg",
+"pv":"assets/images/008pv.png",
+"pvex":"assets/images/008pvex.png",
+"ex":"assets/images/008ex.jpeg",
+"exx":"assets/images/008exx.png",
+"videos":[]
 }
 ]
