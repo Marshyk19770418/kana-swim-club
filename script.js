@@ -120,10 +120,6 @@ function buildMediaList(s) {
   list.push({ label: 'PV EXX', type: 'image', src: s.pvexx });
   }
 
-  if (s.pvexxx) {
-    list.push({ label: 'PV EXXX', type: 'image', src: s.pvexxx });
-  }
-
   if (s.ex) {
     list.push({ label: 'EX', type: 'image', src: s.ex });
   }
