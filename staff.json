@@ -7,9 +7,16 @@
   {"no":"006","name":"五十嵐 結衣","age":19,"height":165,"birthplace":"神奈川県","catch":"親しみやすい笑顔と自然な雰囲気のスイマー。","cover":"assets/images/006.jpeg","ksc":"assets/images/006ksc.jpeg","videos":[{"label":"MOVIE","src":"assets/videos/006.mp4"},{"label":"EX","src":"assets/videos/006ex.mp4"},{"label":"KSC EX","src":"assets/videos/006kscex.mp4"}]
 },
 {"no":"007","name":"真田 瑠衣","age":22,"height":168,"birthplace":"神奈川県","catch":"親しみやすい雰囲気と自然体の笑顔が魅力のスイマー。",
-"cover":"assets/images/007.png","ex":"assets/images/007ex.png",
+"cover":"assets/images/007.png",
+"ex":"assets/images/007ex.png",
+"exx":"assets/images/007exx.png",
+"exxx":"assets/images/007exxx.png",
+"exxxx":"assets/images/007exxxx.png",
 "ksc":"assets/images/007ksc.png",
+"kscex":"assets/images/007kscex.png",
+"kscexx":"assets/images/007kscexx.png",
 "pv":"assets/images/007pv.png",
+"pvex":"assets/images/007pvex.png",
 "videos":[]
 }
 ]
